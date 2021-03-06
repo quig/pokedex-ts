@@ -1,21 +1,36 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import HomeScreen from './src/HomeScreen'
+import DetailsScreen from './src/DetailsScreen'
+import PhotoScreen from './src/PhotoScreen'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+//import firebase from 'firebase'
+//import { FirebaseConfig } from './firebase.config'
+//require('firebase/functions')
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const Stack = createStackNavigator<RootStackParamList>()
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const RootStack = () => (
+    <Stack.Navigator
+        initialRouteName="Home"
+        screenOptions={{ gestureEnabled: false }}
+    >
+        <Stack.Screen
+            name="Home"
+            component={HomeScreen}
+            options={{ title: 'Pokedex' }}
+        />
+        <Stack.Screen name="Details" component={DetailsScreen} />
+        {/*<Stack.Screen name="Photo" component={PhotoScreen} />*/}
+    </Stack.Navigator>
+)
+
+const App = () => (
+    <NavigationContainer>
+        <Stack.Navigator>
+            <Stack.Screen name="Home" component={RootStack} />
+        </Stack.Navigator>
+    </NavigationContainer>
+)
+
+export default App
