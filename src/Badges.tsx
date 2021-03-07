@@ -16,12 +16,11 @@ export const Badges = ({ types }: BadgesProps) => (
         {types.map((type) => (
             <Badge
                 key={type}
-                containerStyle={{
+                badgeStyle={{
                     backgroundColor: colorMap[type] ? colorMap[type] : 'white',
                 }}
-            >
-                <Text style={{ textAlign: 'center' }}>{type}</Text>
-            </Badge>
+                value={type}
+            />
         ))}
     </View>
 )

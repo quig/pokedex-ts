@@ -38,7 +38,7 @@ const HomeScreen = ({ navigation }: Props) => {
                     bottomDivider
                     onPress={() =>
                         navigation.navigate('Details', {
-                            pokemon: pokemon,
+                            selectedPokemon: pokemon,
                         })
                     }
                 >
