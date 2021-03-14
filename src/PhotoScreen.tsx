@@ -1,12 +1,103 @@
-import React, { Component, Fragment } from 'react'
-import { Image, View, ActivityIndicator } from 'react-native'
+import React, { Fragment, useEffect, useState } from 'react'
+import { Image, View, ActivityIndicator, Platform } from 'react-native'
 import { Button } from 'react-native-elements'
-import { ImagePicker, Permissions } from 'expo'
+import * as ImagePicker from 'expo-image-picker'
 import { v4 as uuidv4 } from 'uuid'
-import firebase from 'firebase'
-import {pokemonList} from './PokemonList'
-require('firebase/functions')
+//import firebase from 'firebase'
+//require('firebase/functions')
+import { pokemonList } from './PokemonList'
+import { StackNavigationProp } from '@react-navigation/stack'
+import { RouteProp } from '@react-navigation/native'
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 
+type ImagePickerResult = {
+    cancelled: boolean
+    uri?: string
+}
+
+type Props = {
+    route: RouteProp<RootStackParamList, 'Photo'>
+    navigation: StackNavigationProp<RootStackParamList, 'Photo'>
+}
+
+const PhotoScreen = ({ route, navigation }: Props) => {
+    const [image, setImage] = useState('')
+
+    useEffect(() => {
+        ;(async () => {
+            if (Platform.OS !== 'web') {
+                const {
+                    status,
+                } = await ImagePicker.requestMediaLibraryPermissionsAsync()
+                if (status !== 'granted') {
+                    alert(
+                        'Sorry, we need camera roll permissions to make this work!',
+                    )
+                }
+            }
+        })()
+    }, [])
+
+    const pickImage = async () => {
+        let {
+            cancelled,
+            uri,
+        }: ImagePickerResult = await ImagePicker.launchImageLibraryAsync({
+            mediaTypes: ImagePicker.MediaTypeOptions.All,
+            allowsEditing: true,
+            aspect: [4, 3],
+            quality: 1,
+        })
+
+        if (!cancelled) {
+            setImage(uri ?? '')
+            analyseAndRedirect()
+        }
+    }
+    const analyseAndRedirect = async () => {
+        /* const fileUri = await uploadAsFile(image)
+        const result = await analyseImage(fileUri)
+        navigation.navigate('Details', {
+            selectedPokemon: pokemonList.filter(pkmn => pkmn.name === result)[0],
+        })
+        */
+    }
+
+    return (
+        <View
+            style={{
+                flex: 1,
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: '#fff',
+            }}
+        >
+            {image ? (
+                <Fragment>
+                    <Image
+                        source={{ uri: image }}
+                        style={{ width: 200, height: 200 }}
+                    />
+                    <ActivityIndicator size="small" color="#f4511e" />
+                </Fragment>
+            ) : (
+                <Fragment>
+                    <Button
+                        icon={
+                            <FontAwesome5 name="cat" size={15} color="white" />
+                        }
+                        title=" Pick an image"
+                        onPress={pickImage}
+                        style={{ padding: 10 }}
+                    />
+                </Fragment>
+            )}
+        </View>
+    )
+}
+export default PhotoScreen
+
+/*
 export default class PhotoScreen extends Component {
     state = {
         image: null,
@@ -148,4 +239,4 @@ export default class PhotoScreen extends Component {
             console.log(error)
         }
     }
-}
+}*/

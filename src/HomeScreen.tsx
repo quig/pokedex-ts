@@ -31,6 +31,7 @@ const HomeScreen = ({ navigation }: Props) => {
                 onChangeText={(text) => searchFilterFunction(text)}
                 autoCorrect={false}
                 value={search}
+                containerStyle={{ backgroundColor: '#fff'}}
             />
             {pokeList.map((pokemon) => (
                 <ListItem
@@ -54,19 +55,3 @@ const HomeScreen = ({ navigation }: Props) => {
 }
 
 export default HomeScreen
-
-/*
-    const navigationOptions = ({ navigation }: Props) => {
-        return {
-            headerTitle: 'Pokedex',
-            headerRight: (
-                <Icon
-                    onPress={() => navigation.navigate('Photo')}
-                    name="photo-camera"
-                    color="#fff"
-                    size={40}
-                />
-            ),
-        }
-    }
-    */

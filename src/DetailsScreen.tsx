@@ -64,6 +64,7 @@ const DetailsScreen = ({
                 flex: 1,
                 alignItems: 'center',
                 justifyContent: 'center',
+                backgroundColor: '#fff',
             }}
         >
             {isReady ? (
