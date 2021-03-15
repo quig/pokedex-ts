@@ -2,7 +2,7 @@ type Pokemon = {
     id: number
     name: string
     types: Array<PokemonType>
-    image: any
+    image?: any
     description?: string
     uri?: string
 }

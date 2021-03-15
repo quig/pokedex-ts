@@ -6,9 +6,10 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 
-//import firebase from 'firebase'
-//import { FirebaseConfig } from './firebase.config'
-//require('firebase/functions')
+import firebase from 'firebase/app'
+import { firebaseConfig } from './firebase.config'
+
+firebase.initializeApp(firebaseConfig)
 
 const Stack = createStackNavigator<RootStackParamList>()
 

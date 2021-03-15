@@ -10,7 +10,8 @@ const defaultPokemon: Pokemon = {
     id: 201,
     name: 'unown',
     types: ['psychic'],
-    image: require('../assets/sprites/201.png'),
+    image:
+        'https://firebasestorage.googleapis.com/v0/b/pokemon-ts.appspot.com/o/sprites%2F201.png?alt=media',
     description: 'We have not been able to find your pokemon',
 }
 
@@ -76,7 +77,7 @@ const DetailsScreen = ({
                             resizeMode="contain"
                         />
                     ) : (
-                        <Image source={pokemon.image} />
+                        <Image source={{ uri: pokemon.image }} />
                     )}
                     <Text h1 style={{ textTransform: 'capitalize' }}>
                         {pokemon.name}

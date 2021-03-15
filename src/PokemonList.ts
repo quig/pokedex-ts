@@ -1,4 +1,4 @@
-export const colorMap : PokemonColorMap = {
+export const colorMap: PokemonColorMap = {
     fire: '#ff4d26',
     water: '#3aa4ff',
     grass: '#82d35f',
@@ -23,913 +23,761 @@ export const pokemonList: Array<Pokemon> = [
     {
         id: 1,
         name: 'bulbasaur',
-        types: ['poison', 'grass'],
-        image: require('../assets/sprites/1.png'),
+        types: ['poison', 'grass']
     },
     {
         id: 2,
         name: 'ivysaur',
-        types: ['poison', 'grass'],
-        image: require('../assets/sprites/2.png'),
+        types: ['poison', 'grass']
     },
     {
         id: 3,
         name: 'venusaur',
-        types: ['poison', 'grass'],
-        image: require('../assets/sprites/3.png'),
+        types: ['poison', 'grass']
     },
     {
         id: 4,
         name: 'charmander',
-        types: ['fire'],
-        image: require('../assets/sprites/4.png'),
+        types: ['fire']
     },
     {
         id: 5,
         name: 'charmeleon',
-        types: ['fire'],
-        image: require('../assets/sprites/5.png'),
+        types: ['fire']
     },
     {
         id: 6,
         name: 'charizard',
-        types: ['flying', 'fire'],
-        image: require('../assets/sprites/6.png'),
+        types: ['flying', 'fire']
     },
     {
         id: 7,
         name: 'squirtle',
-        types: ['water'],
-        image: require('../assets/sprites/7.png'),
+        types: ['water']
     },
     {
         id: 8,
         name: 'wartortle',
-        types: ['water'],
-        image: require('../assets/sprites/8.png'),
+        types: ['water']
     },
     {
         id: 9,
         name: 'blastoise',
-        types: ['water'],
-        image: require('../assets/sprites/9.png'),
+        types: ['water']
     },
     {
         id: 10,
         name: 'caterpie',
-        types: ['bug'],
-        image: require('../assets/sprites/10.png'),
+        types: ['bug']
     },
     {
         id: 11,
         name: 'metapod',
-        types: ['bug'],
-        image: require('../assets/sprites/11.png'),
+        types: ['bug']
     },
     {
         id: 12,
         name: 'butterfree',
-        types: ['flying', 'bug'],
-        image: require('../assets/sprites/12.png'),
+        types: ['flying', 'bug']
     },
     {
         id: 13,
         name: 'weedle',
-        types: ['poison', 'bug'],
-        image: require('../assets/sprites/13.png'),
+        types: ['poison', 'bug']
     },
     {
         id: 14,
         name: 'kakuna',
-        types: ['poison', 'bug'],
-        image: require('../assets/sprites/14.png'),
+        types: ['poison', 'bug']
     },
     {
         id: 15,
         name: 'beedrill',
-        types: ['poison', 'bug'],
-        image: require('../assets/sprites/15.png'),
+        types: ['poison', 'bug']
     },
     {
         id: 16,
         name: 'pidgey',
-        types: ['flying', 'normal'],
-        image: require('../assets/sprites/16.png'),
+        types: ['flying', 'normal']
     },
     {
         id: 17,
         name: 'pidgeotto',
-        types: ['flying', 'normal'],
-        image: require('../assets/sprites/17.png'),
+        types: ['flying', 'normal']
     },
     {
         id: 18,
         name: 'pidgeot',
-        types: ['flying', 'normal'],
-        image: require('../assets/sprites/18.png'),
+        types: ['flying', 'normal']
     },
     {
         id: 19,
         name: 'rattata',
-        types: ['normal'],
-        image: require('../assets/sprites/19.png'),
+        types: ['normal']
     },
     {
         id: 20,
         name: 'raticate',
-        types: ['normal'],
-        image: require('../assets/sprites/20.png'),
+        types: ['normal']
     },
     {
         id: 21,
         name: 'spearow',
-        types: ['flying', 'normal'],
-        image: require('../assets/sprites/21.png'),
+        types: ['flying', 'normal']
     },
     {
         id: 22,
         name: 'fearow',
-        types: ['flying', 'normal'],
-        image: require('../assets/sprites/22.png'),
+        types: ['flying', 'normal']
     },
     {
         id: 23,
         name: 'ekans',
-        types: ['poison'],
-        image: require('../assets/sprites/23.png'),
+        types: ['poison']
     },
     {
         id: 24,
         name: 'arbok',
-        types: ['poison'],
-        image: require('../assets/sprites/24.png'),
+        types: ['poison']
     },
     {
         id: 25,
         name: 'pikachu',
-        types: ['electric'],
-        image: require('../assets/sprites/25.png'),
+        types: ['electric']
     },
     {
         id: 26,
         name: 'raichu',
-        types: ['electric'],
-        image: require('../assets/sprites/26.png'),
+        types: ['electric']
     },
     {
         id: 27,
         name: 'sandshrew',
-        types: ['ground'],
-        image: require('../assets/sprites/27.png'),
+        types: ['ground']
     },
     {
         id: 28,
         name: 'sandslash',
-        types: ['ground'],
-        image: require('../assets/sprites/28.png'),
+        types: ['ground']
     },
     {
         id: 29,
         name: 'nidoran-f',
-        types: ['poison'],
-        image: require('../assets/sprites/29.png'),
+        types: ['poison']
     },
     {
         id: 30,
         name: 'nidorina',
-        types: ['poison'],
-        image: require('../assets/sprites/30.png'),
+        types: ['poison']
     },
     {
         id: 31,
         name: 'nidoqueen',
-        types: ['ground', 'poison'],
-        image: require('../assets/sprites/31.png'),
+        types: ['ground', 'poison']
     },
     {
         id: 32,
         name: 'nidoran-m',
-        types: ['poison'],
-        image: require('../assets/sprites/32.png'),
+        types: ['poison']
     },
     {
         id: 33,
         name: 'nidorino',
-        types: ['poison'],
-        image: require('../assets/sprites/33.png'),
+        types: ['poison']
     },
     {
         id: 34,
         name: 'nidoking',
-        types: ['ground', 'poison'],
-        image: require('../assets/sprites/34.png'),
+        types: ['ground', 'poison']
     },
     {
         id: 35,
         name: 'clefairy',
-        types: ['fairy'],
-        image: require('../assets/sprites/35.png'),
+        types: ['fairy']
     },
     {
         id: 36,
         name: 'clefable',
-        types: ['fairy'],
-        image: require('../assets/sprites/36.png'),
+        types: ['fairy']
     },
     {
         id: 37,
         name: 'vulpix',
-        types: ['fire'],
-        image: require('../assets/sprites/37.png'),
+        types: ['fire']
     },
     {
         id: 38,
         name: 'ninetales',
-        types: ['fire'],
-        image: require('../assets/sprites/38.png'),
+        types: ['fire']
     },
     {
         id: 39,
         name: 'jigglypuff',
-        types: ['fairy', 'normal'],
-        image: require('../assets/sprites/39.png'),
+        types: ['fairy', 'normal']
     },
     {
         id: 40,
         name: 'wigglytuff',
-        types: ['fairy', 'normal'],
-        image: require('../assets/sprites/40.png'),
+        types: ['fairy', 'normal']
     },
     {
         id: 41,
         name: 'zubat',
-        types: ['flying', 'poison'],
-        image: require('../assets/sprites/41.png'),
+        types: ['flying', 'poison']
     },
     {
         id: 42,
         name: 'golbat',
-        types: ['flying', 'poison'],
-        image: require('../assets/sprites/42.png'),
+        types: ['flying', 'poison']
     },
     {
         id: 43,
         name: 'oddish',
-        types: ['poison', 'grass'],
-        image: require('../assets/sprites/43.png'),
+        types: ['poison', 'grass']
     },
     {
         id: 44,
         name: 'gloom',
-        types: ['poison', 'grass'],
-        image: require('../assets/sprites/44.png'),
+        types: ['poison', 'grass']
     },
     {
         id: 45,
         name: 'vileplume',
-        types: ['grass', 'poison'],
-        image: require('../assets/sprites/45.png'),
+        types: ['grass', 'poison']
     },
     {
         id: 46,
         name: 'paras',
-        types: ['grass', 'bug'],
-        image: require('../assets/sprites/46.png'),
+        types: ['grass', 'bug']
     },
     {
         id: 47,
         name: 'parasect',
-        types: ['grass', 'bug'],
-        image: require('../assets/sprites/47.png'),
+        types: ['grass', 'bug']
     },
     {
         id: 48,
         name: 'venonat',
-        types: ['poison', 'bug'],
-        image: require('../assets/sprites/48.png'),
+        types: ['poison', 'bug']
     },
     {
         id: 49,
         name: 'venomoth',
-        types: ['poison', 'bug'],
-        image: require('../assets/sprites/49.png'),
+        types: ['poison', 'bug']
     },
     {
         id: 50,
         name: 'diglett',
-        types: ['ground'],
-        image: require('../assets/sprites/50.png'),
+        types: ['ground']
     },
     {
         id: 51,
         name: 'dugtrio',
-        types: ['ground'],
-        image: require('../assets/sprites/51.png'),
+        types: ['ground']
     },
     {
         id: 52,
         name: 'meowth',
-        types: ['normal'],
-        image: require('../assets/sprites/52.png'),
+        types: ['normal']
     },
     {
         id: 53,
         name: 'persian',
-        types: ['normal'],
-        image: require('../assets/sprites/53.png'),
+        types: ['normal']
     },
     {
         id: 54,
         name: 'psyduck',
-        types: ['water'],
-        image: require('../assets/sprites/54.png'),
+        types: ['water']
     },
     {
         id: 55,
         name: 'golduck',
-        types: ['water'],
-        image: require('../assets/sprites/55.png'),
+        types: ['water']
     },
     {
         id: 56,
         name: 'mankey',
-        types: ['fighting'],
-        image: require('../assets/sprites/56.png'),
+        types: ['fighting']
     },
     {
         id: 57,
         name: 'primeape',
-        types: ['fighting'],
-        image: require('../assets/sprites/57.png'),
+        types: ['fighting']
     },
     {
         id: 58,
         name: 'growlithe',
-        types: ['fire'],
-        image: require('../assets/sprites/58.png'),
+        types: ['fire']
     },
     {
         id: 59,
         name: 'arcanine',
-        types: ['fire'],
-        image: require('../assets/sprites/59.png'),
+        types: ['fire']
     },
     {
         id: 60,
         name: 'poliwag',
-        types: ['water'],
-        image: require('../assets/sprites/60.png'),
+        types: ['water']
     },
     {
         id: 61,
         name: 'poliwhirl',
-        types: ['water'],
-        image: require('../assets/sprites/61.png'),
+        types: ['water']
     },
     {
         id: 62,
         name: 'poliwrath',
-        types: ['fighting', 'water'],
-        image: require('../assets/sprites/62.png'),
+        types: ['fighting', 'water']
     },
     {
         id: 63,
         name: 'abra',
-        types: ['psychic'],
-        image: require('../assets/sprites/63.png'),
+        types: ['psychic']
     },
     {
         id: 64,
         name: 'kadabra',
-        types: ['psychic'],
-        image: require('../assets/sprites/64.png'),
+        types: ['psychic']
     },
     {
         id: 65,
         name: 'alakazam',
-        types: ['psychic'],
-        image: require('../assets/sprites/65.png'),
+        types: ['psychic']
     },
     {
         id: 66,
         name: 'machop',
-        types: ['fighting'],
-        image: require('../assets/sprites/66.png'),
+        types: ['fighting']
     },
     {
         id: 67,
         name: 'machoke',
-        types: ['fighting'],
-        image: require('../assets/sprites/67.png'),
+        types: ['fighting']
     },
     {
         id: 68,
         name: 'machamp',
-        types: ['fighting'],
-        image: require('../assets/sprites/68.png'),
+        types: ['fighting']
     },
     {
         id: 69,
         name: 'bellsprout',
-        types: ['poison', 'grass'],
-        image: require('../assets/sprites/69.png'),
+        types: ['poison', 'grass']
     },
     {
         id: 70,
         name: 'weepinbell',
-        types: ['poison', 'grass'],
-        image: require('../assets/sprites/70.png'),
+        types: ['poison', 'grass']
     },
     {
         id: 71,
         name: 'victreebel',
-        types: ['poison', 'grass'],
-        image: require('../assets/sprites/71.png'),
+        types: ['poison', 'grass']
     },
     {
         id: 72,
         name: 'tentacool',
-        types: ['poison', 'water'],
-        image: require('../assets/sprites/72.png'),
+        types: ['poison', 'water']
     },
     {
         id: 73,
         name: 'tentacruel',
-        types: ['poison', 'water'],
-        image: require('../assets/sprites/73.png'),
+        types: ['poison', 'water']
     },
     {
         id: 74,
         name: 'geodude',
-        types: ['ground', 'rock'],
-        image: require('../assets/sprites/74.png'),
+        types: ['ground', 'rock']
     },
     {
         id: 75,
         name: 'graveler',
-        types: ['ground', 'rock'],
-        image: require('../assets/sprites/75.png'),
+        types: ['ground', 'rock']
     },
     {
         id: 76,
         name: 'golem',
-        types: ['ground', 'rock'],
-        image: require('../assets/sprites/76.png'),
+        types: ['ground', 'rock']
     },
     {
         id: 77,
         name: 'ponyta',
-        types: ['fire'],
-        image: require('../assets/sprites/77.png'),
+        types: ['fire']
     },
     {
         id: 78,
         name: 'rapidash',
-        types: ['fire'],
-        image: require('../assets/sprites/78.png'),
+        types: ['fire']
     },
     {
         id: 79,
         name: 'slowpoke',
-        types: ['psychic', 'water'],
-        image: require('../assets/sprites/79.png'),
+        types: ['psychic', 'water']
     },
     {
         id: 80,
         name: 'slowbro',
-        types: ['psychic', 'water'],
-        image: require('../assets/sprites/80.png'),
+        types: ['psychic', 'water']
     },
     {
         id: 81,
         name: 'magnemite',
-        types: ['steel', 'electric'],
-        image: require('../assets/sprites/81.png'),
+        types: ['steel', 'electric']
     },
     {
         id: 82,
         name: 'magneton',
-        types: ['steel', 'electric'],
-        image: require('../assets/sprites/82.png'),
+        types: ['steel', 'electric']
     },
     {
         id: 83,
         name: 'farfetchd',
-        types: ['flying', 'normal'],
-        image: require('../assets/sprites/83.png'),
+        types: ['flying', 'normal']
     },
     {
         id: 84,
         name: 'doduo',
-        types: ['flying', 'normal'],
-        image: require('../assets/sprites/84.png'),
+        types: ['flying', 'normal']
     },
     {
         id: 85,
         name: 'dodrio',
-        types: ['flying', 'normal'],
-        image: require('../assets/sprites/85.png'),
+        types: ['flying', 'normal']
     },
     {
         id: 86,
         name: 'seel',
-        types: ['water'],
-        image: require('../assets/sprites/86.png'),
+        types: ['water']
     },
     {
         id: 87,
         name: 'dewgong',
-        types: ['ice', 'water'],
-        image: require('../assets/sprites/87.png'),
+        types: ['ice', 'water']
     },
     {
         id: 88,
         name: 'grimer',
-        types: ['poison'],
-        image: require('../assets/sprites/88.png'),
+        types: ['poison']
     },
     {
         id: 89,
         name: 'muk',
-        types: ['poison'],
-        image: require('../assets/sprites/89.png'),
+        types: ['poison']
     },
     {
         id: 90,
         name: 'shellder',
-        types: ['water'],
-        image: require('../assets/sprites/90.png'),
+        types: ['water']
     },
     {
         id: 91,
         name: 'cloyster',
-        types: ['ice', 'water'],
-        image: require('../assets/sprites/91.png'),
+        types: ['ice', 'water']
     },
     {
         id: 92,
         name: 'gastly',
-        types: ['poison', 'ghost'],
-        image: require('../assets/sprites/92.png'),
+        types: ['poison', 'ghost']
     },
     {
         id: 93,
         name: 'haunter',
-        types: ['poison', 'ghost'],
-        image: require('../assets/sprites/93.png'),
+        types: ['poison', 'ghost']
     },
     {
         id: 94,
         name: 'gengar',
-        types: ['poison', 'ghost'],
-        image: require('../assets/sprites/94.png'),
+        types: ['poison', 'ghost']
     },
     {
         id: 95,
         name: 'onix',
-        types: ['ground', 'rock'],
-        image: require('../assets/sprites/95.png'),
+        types: ['ground', 'rock']
     },
     {
         id: 96,
         name: 'drowzee',
-        types: ['psychic'],
-        image: require('../assets/sprites/96.png'),
+        types: ['psychic']
     },
     {
         id: 97,
         name: 'hypno',
-        types: ['psychic'],
-        image: require('../assets/sprites/97.png'),
+        types: ['psychic']
     },
     {
         id: 98,
         name: 'krabby',
-        types: ['water'],
-        image: require('../assets/sprites/98.png'),
+        types: ['water']
     },
     {
         id: 99,
         name: 'kingler',
-        types: ['water'],
-        image: require('../assets/sprites/99.png'),
+        types: ['water']
     },
     {
         id: 100,
         name: 'voltorb',
-        types: ['electric'],
-        image: require('../assets/sprites/100.png'),
+        types: ['electric']
     },
     {
         id: 101,
         name: 'electrode',
-        types: ['electric'],
-        image: require('../assets/sprites/101.png'),
+        types: ['electric']
     },
     {
         id: 102,
         name: 'exeggcute',
-        types: ['psychic', 'grass'],
-        image: require('../assets/sprites/102.png'),
+        types: ['psychic', 'grass']
     },
     {
         id: 103,
         name: 'exeggutor',
-        types: ['psychic', 'grass'],
-        image: require('../assets/sprites/103.png'),
+        types: ['psychic', 'grass']
     },
     {
         id: 104,
         name: 'cubone',
-        types: ['ground'],
-        image: require('../assets/sprites/104.png'),
+        types: ['ground']
     },
     {
         id: 105,
         name: 'marowak',
-        types: ['ground'],
-        image: require('../assets/sprites/105.png'),
+        types: ['ground']
     },
     {
         id: 106,
         name: 'hitmonlee',
-        types: ['fighting'],
-        image: require('../assets/sprites/106.png'),
+        types: ['fighting']
     },
     {
         id: 107,
         name: 'hitmonchan',
-        types: ['fighting'],
-        image: require('../assets/sprites/107.png'),
+        types: ['fighting']
     },
     {
         id: 108,
         name: 'lickitung',
-        types: ['normal'],
-        image: require('../assets/sprites/108.png'),
+        types: ['normal']
     },
     {
         id: 109,
         name: 'koffing',
-        types: ['poison'],
-        image: require('../assets/sprites/109.png'),
+        types: ['poison']
     },
     {
         id: 110,
         name: 'weezing',
-        types: ['poison'],
-        image: require('../assets/sprites/110.png'),
+        types: ['poison']
     },
     {
         id: 111,
         name: 'rhyhorn',
-        types: ['rock', 'ground'],
-        image: require('../assets/sprites/111.png'),
+        types: ['rock', 'ground']
     },
     {
         id: 112,
         name: 'rhydon',
-        types: ['rock', 'ground'],
-        image: require('../assets/sprites/112.png'),
+        types: ['rock', 'ground']
     },
     {
         id: 113,
         name: 'chansey',
-        types: ['normal'],
-        image: require('../assets/sprites/113.png'),
+        types: ['normal']
     },
     {
         id: 114,
         name: 'tangela',
-        types: ['grass'],
-        image: require('../assets/sprites/114.png'),
+        types: ['grass']
     },
     {
         id: 115,
         name: 'kangaskhan',
-        types: ['normal'],
-        image: require('../assets/sprites/115.png'),
+        types: ['normal']
     },
     {
         id: 116,
         name: 'horsea',
-        types: ['water'],
-        image: require('../assets/sprites/116.png'),
+        types: ['water']
     },
     {
         id: 117,
         name: 'seadra',
-        types: ['water'],
-        image: require('../assets/sprites/117.png'),
+        types: ['water']
     },
     {
         id: 118,
         name: 'goldeen',
-        types: ['water'],
-        image: require('../assets/sprites/118.png'),
+        types: ['water']
     },
     {
         id: 119,
         name: 'seaking',
-        types: ['water'],
-        image: require('../assets/sprites/119.png'),
+        types: ['water']
     },
     {
         id: 120,
         name: 'staryu',
-        types: ['water'],
-        image: require('../assets/sprites/120.png'),
+        types: ['water']
     },
     {
         id: 121,
         name: 'starmie',
-        types: ['psychic', 'water'],
-        image: require('../assets/sprites/121.png'),
+        types: ['psychic', 'water']
     },
     {
         id: 122,
         name: 'mr-mime',
-        types: ['fairy', 'psychic'],
-        image: require('../assets/sprites/122.png'),
+        types: ['fairy', 'psychic']
     },
     {
         id: 123,
         name: 'scyther',
-        types: ['flying', 'bug'],
-        image: require('../assets/sprites/123.png'),
+        types: ['flying', 'bug']
     },
     {
         id: 124,
         name: 'jynx',
-        types: ['psychic', 'ice'],
-        image: require('../assets/sprites/124.png'),
+        types: ['psychic', 'ice']
     },
     {
         id: 125,
         name: 'electabuzz',
-        types: ['electric'],
-        image: require('../assets/sprites/125.png'),
+        types: ['electric']
     },
     {
         id: 126,
         name: 'magmar',
-        types: ['fire'],
-        image: require('../assets/sprites/126.png'),
+        types: ['fire']
     },
     {
         id: 127,
         name: 'pinsir',
-        types: ['bug'],
-        image: require('../assets/sprites/127.png'),
+        types: ['bug']
     },
     {
         id: 128,
         name: 'tauros',
-        types: ['normal'],
-        image: require('../assets/sprites/128.png'),
+        types: ['normal']
     },
     {
         id: 129,
         name: 'magikarp',
-        types: ['water'],
-        image: require('../assets/sprites/129.png'),
+        types: ['water']
     },
     {
         id: 130,
         name: 'gyarados',
-        types: ['flying', 'water'],
-        image: require('../assets/sprites/130.png'),
+        types: ['flying', 'water']
     },
     {
         id: 131,
         name: 'lapras',
-        types: ['ice', 'water'],
-        image: require('../assets/sprites/131.png'),
+        types: ['ice', 'water']
     },
     {
         id: 132,
         name: 'ditto',
-        types: ['normal'],
-        image: require('../assets/sprites/132.png'),
+        types: ['normal']
     },
     {
         id: 133,
         name: 'eevee',
-        types: ['normal'],
-        image: require('../assets/sprites/133.png'),
+        types: ['normal']
     },
     {
         id: 134,
         name: 'vaporeon',
-        types: ['water'],
-        image: require('../assets/sprites/134.png'),
+        types: ['water']
     },
     {
         id: 135,
         name: 'jolteon',
-        types: ['electric'],
-        image: require('../assets/sprites/135.png'),
+        types: ['electric']
     },
     {
         id: 136,
         name: 'flareon',
-        types: ['fire'],
-        image: require('../assets/sprites/136.png'),
+        types: ['fire']
     },
     {
         id: 137,
         name: 'porygon',
-        types: ['normal'],
-        image: require('../assets/sprites/137.png'),
+        types: ['normal']
     },
     {
         id: 138,
         name: 'omanyte',
-        types: ['water', 'rock'],
-        image: require('../assets/sprites/138.png'),
+        types: ['water', 'rock']
     },
     {
         id: 139,
         name: 'omastar',
-        types: ['water', 'rock'],
-        image: require('../assets/sprites/139.png'),
+        types: ['water', 'rock']
     },
     {
         id: 140,
         name: 'kabuto',
-        types: ['water', 'rock'],
-        image: require('../assets/sprites/140.png'),
+        types: ['water', 'rock']
     },
     {
         id: 141,
         name: 'kabutops',
-        types: ['water', 'rock'],
-        image: require('../assets/sprites/141.png'),
+        types: ['water', 'rock']
     },
     {
         id: 142,
         name: 'aerodactyl',
-        types: ['flying', 'rock'],
-        image: require('../assets/sprites/142.png'),
+        types: ['flying', 'rock']
     },
     {
         id: 143,
         name: 'snorlax',
-        types: ['normal'],
-        image: require('../assets/sprites/143.png'),
+        types: ['normal']
     },
     {
         id: 144,
         name: 'articuno',
-        types: ['flying', 'ice'],
-        image: require('../assets/sprites/144.png'),
+        types: ['flying', 'ice']
     },
     {
         id: 145,
         name: 'zapdos',
-        types: ['flying', 'electric'],
-        image: require('../assets/sprites/145.png'),
+        types: ['flying', 'electric']
     },
     {
         id: 146,
         name: 'moltres',
-        types: ['flying', 'fire'],
-        image: require('../assets/sprites/146.png'),
+        types: ['flying', 'fire']
     },
     {
         id: 147,
         name: 'dratini',
-        types: ['dragon'],
-        image: require('../assets/sprites/147.png'),
+        types: ['dragon']
     },
     {
         id: 148,
         name: 'dragonair',
-        types: ['dragon'],
-        image: require('../assets/sprites/148.png'),
+        types: ['dragon']
     },
     {
         id: 149,
         name: 'dragonite',
-        types: ['flying', 'dragon'],
-        image: require('../assets/sprites/149.png'),
+        types: ['flying', 'dragon']
     },
     {
         id: 150,
         name: 'mewtwo',
-        types: ['psychic'],
-        image: require('../assets/sprites/150.png'),
+        types: ['psychic']
     },
     {
         id: 151,
         name: 'mew',
-        types: ['psychic'],
-        image: require('../assets/sprites/151.png'),
+        types: ['psychic']
     },
     {
         id: 201,
         name: 'unown',
-        types: ['?'],
-        image: require('../assets/sprites/201.png'),
+        types: ['?']
     },
 ]

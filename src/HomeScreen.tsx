@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { View } from 'react-native'
 import { ListItem, SearchBar, Avatar } from 'react-native-elements'
 import { pokemonList } from './PokemonList'
 import { StackNavigationProp } from '@react-navigation/stack'
 import { RouteProp } from '@react-navigation/native'
+
+const FIREBASE_STORAGE =
+    'https://firebasestorage.googleapis.com/v0/b/pokemon-ts.appspot.com/o/sprites%2F<id>.png?alt=media'
 
 type Props = {
     route: RouteProp<RootStackParamList, 'Home'>
@@ -31,7 +34,7 @@ const HomeScreen = ({ navigation }: Props) => {
                 onChangeText={(text) => searchFilterFunction(text)}
                 autoCorrect={false}
                 value={search}
-                containerStyle={{ backgroundColor: '#fff'}}
+                containerStyle={{ backgroundColor: '#fff' }}
             />
             {pokeList.map((pokemon) => (
                 <ListItem
@@ -43,7 +46,14 @@ const HomeScreen = ({ navigation }: Props) => {
                         })
                     }
                 >
-                    <Avatar source={{ uri: pokemon.image }} />
+                    <Avatar
+                        source={{
+                            uri: FIREBASE_STORAGE.replace(
+                                '<id>',
+                                pokemon.id.toString(),
+                            ),
+                        }}
+                    />
                     <ListItem.Content>
                         <ListItem.Title>{pokemon.name}</ListItem.Title>
                     </ListItem.Content>
