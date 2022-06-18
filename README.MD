@@ -18,7 +18,7 @@ Et voilà !
 
 ## Running the app
 
-⚠️ Since Expo, firebase and React Native have evolved quite a bit, please consider updating the package.json accordingly and adapt the code.
+⚠️ Since Expo, Firebase and React Native have evolved quite a bit, please consider updating the dependencies to be able to run it locally.
 
 -   add your firebase information into `./firebase.config.js`
 -   `cd` into the `app` directory and run `npm i`
