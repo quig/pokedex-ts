@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { Image, View, ActivityIndicator } from 'react-native'
 import { Text } from 'react-native-elements'
 import axios from 'axios'

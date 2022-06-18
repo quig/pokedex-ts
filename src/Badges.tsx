@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from 'react-native'
-import { Badge, Text } from 'react-native-elements'
+import { Badge } from 'react-native-elements'
 import { colorMap } from './PokemonList'
 
 type BadgesProps = {
